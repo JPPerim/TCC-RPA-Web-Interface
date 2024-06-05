@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>VERIFICADOR DE PROCESSOS ROBÓTICOS</title>
+    <script src="consomeAPI.js"></script>
+</head>
+<body>
+    <div class="boxFormulario">
+        <span>
+            <p class="tituloFormulario">
+                SIMULAÇÃO DE FORMULÁRIO
+            </p>
+        </span>
+        <span>
+            <p class="textAvisoFormulario">
+                <i class="fa fa-exclamation-triangle"></i> Esse site não é real, os dados inseridos não devem ser reais! É apenas um teste para ferramentas de RPA criado com objetivo educativo!
+            </p>
+        </span>
+        <div class="forms">
+            <br>
+            <div class="row">
+                <div class="column">
+                    <span>
+                        
+                        <form class="form1">
+                            <label for="fbot_id">BOT ID</label><br>
+                            <input type="text" id="fbot_id" name="fbot_id"><br><br>   
+                            <label for="fnome">NOME</label><br>
+                            <input type="text" id="fnome" name="fnome"><br><br>
+                            <label for="fid_num">ID (NÚMEROS)</label><br>
+                            <input type="text" id="fid_num" name="fid_num"><br><br>
+                            <label for="fgenero">GENERO</label><br>
+                            <input type="radio" id="fgen_m" name="genero" value="m">
+                            <label for="masculino">Masculino</label>
+                            <input type="radio" id="fgen_f" name="genero" value="f">
+                            <label for="feminino">Feminino</label>
+                            <input type="radio" id="fgen_nd" name="genero" value="nd">
+                            <label for="naoDeclarar">Não Declarar</label>
+                            
+                        </form>
+                    </span>
+                </div>
+                <div class="column">
+                    <span>
+                        <form class="form1">
+                            <label for="fdata_nasc">DATA DE NASCIMENTO</label><br>
+                            <input type="text" id="fdata_nasc" name="fdata_nasc"><br>  <br> 
+                            <label for="fid2_num_char">ID2 (NÚMEROS + LETRAS)</label><br>
+                            <input type="text" id="fid2_num_char" name="fid2_num_char"><br> <br>
+                        </form>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="buttonsDiv">
+            <div class="row">
+                <div class="column">
+                    <button class="buttonSalvar" type="submit" onclick="consomeAPI();">SALVAR</button>
+                </div>
+                <div class="column">
+                    <a href="index.html">
+                        <button class="buttonCancelar">CANCELAR</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
